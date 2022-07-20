@@ -1,4 +1,5 @@
-﻿using OmlineStore.Model;
+﻿using OnlineStore.Model;
+using OnlineStore.Repo.Interfaces;
 using Services.InterFaces;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,14 @@ namespace Services.Impl
 {
     public class ProductServace : ProductInterFase
     {
+        //private readonly IProductRepository _productRepository;
+
+
+
+        //public ProductServace(IProductRepository productRepository)
+        //{
+        //    _productRepository = productRepository;
+        //}
         public async Task<Product> GetProduct()
         {
             return new Product()
@@ -23,22 +32,11 @@ namespace Services.Impl
 
         public async Task<List<Product>> GetProducts()
         {
-            return new List<Product>(){
-                new Product()
-                {
-                  Id = 1,
-                  Name = "product 1",
-                  Price = 100,
-                  Description = "new laptop with best price"
-                },
-                new Product()
-                {
-                  Id = 1,
-                  Name = "product 2",
-                  Price = 200,
-                  Description = "new laptop2 with best price"
-                }
-            };
+            throw new NotImplementedException();
+            //return await _productRepository.GetProducts();
         }
+    
+
     }
+
 }

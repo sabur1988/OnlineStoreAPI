@@ -1,25 +1,30 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OmlineStore.Model;
+using OnlineStore.Model;
+using OnlineStoreAPI;
 using Services.InterFaces;
 
-namespace OnlineStoreAPI.Controllers
+namespace OnlineStoreApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
         private readonly ProductInterFase _productService;
+        private readonly OnlineStoreContext _onlineStoreContext;
 
-        public ProductController(ProductInterFase productService)
+        public ProductController(ProductInterFase productService, OnlineStoreContext onlineStoreContext)
         {
             _productService = productService;
+            _onlineStoreContext = onlineStoreContext;
         }
 
         [HttpGet("products")]
         public async Task<IActionResult> GetProducts()
         {
-            var result = await _productService.GetProducts();
+            //var result = await _productService.GetProducts();
+            //return Ok(result);
+            var result = _onlineStoreContext.Set<Product>().ToList();
             return Ok(result);
         }
 

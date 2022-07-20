@@ -1,5 +1,6 @@
-﻿using OmlineStore.Model;
+﻿using OnlineStore.Model;
 using OnlineStore.Repo.Interfaces;
+using OnlineStoreAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,19 +11,30 @@ namespace OnlineStore.Repo.Impl
 {
     public class ProductRepository : IProductRepository
     {
-        public async Task DeleteProduct(int id)
+        private readonly OnlineStoreContext _context;
+
+        public ProductRepository(OnlineStoreContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public async Task<List<Product>> GetProduct(int? top = null)
+        public async Task DeleteProduct(int id)
         {
             throw new NotImplementedException();
         }
 
         public async Task<Product> GetProductById(int id)
         {
-            throw new NotImplementedException();
+            var product = _context.Set<Product>().FirstOrDefault(x => x.Id == id);
+            return product;
+        }
+        public async Task<List<Product>> GetProducts(int? top = null)
+        {
+            if(top != null)
+            {
+                return _context.Set<Product>().Take((int)top).ToList();
+            }
+            return _context.Set<Product>().ToList();
         }
 
         public async Task<int> InsertProduct(Product product)

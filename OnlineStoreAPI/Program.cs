@@ -1,10 +1,16 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Web;
+using OnlineStoreAPI;
 using Services.Impl;
 using Services.InterFaces;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddDbContext<OnlineStoreContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("OnlineStoreDb")));
+
+builder.Services.AddDbContext<OnlineStoreContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("OnlineStoreDb")));
 
 // Add services to the container.
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

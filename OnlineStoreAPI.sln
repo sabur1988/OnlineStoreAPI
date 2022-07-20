@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreAPI", "OnlineStoreAPI\OnlineStoreAPI.csproj", "{06B354CC-934F-4CCA-A84D-8070DDEA2312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStoreAPI", "OnlineStoreAPI\OnlineStoreAPI.csproj", "{06B354CC-934F-4CCA-A84D-8070DDEA2312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.InterFaces", "Services.InterFaces\Services.InterFaces.csproj", "{CB83D368-8102-4593-B63D-6FFEB6DFD10C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.InterFaces", "Services.InterFaces\Services.InterFaces.csproj", "{CB83D368-8102-4593-B63D-6FFEB6DFD10C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Impl", "Services.Impl\Services.Impl.csproj", "{64714958-B5E4-4BB6-8E33-2EE51C9DC327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Impl", "Services.Impl\Services.Impl.csproj", "{64714958-B5E4-4BB6-8E33-2EE51C9DC327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmlineStore.Model", "OmlineStore.Model\OmlineStore.Model.csproj", "{FDD4A247-4569-4513-AB15-6E2DFE2D84D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Model", "OmlineStore.Model\OnlineStore.Model.csproj", "{FDD4A247-4569-4513-AB15-6E2DFE2D84D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repo.Interfaces", "OnlineStore.Repo.Interfaces\OnlineStore.Repo.Interfaces.csproj", "{192FC15B-38A5-4409-8A37-8411B621F0ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Repo.Interfaces", "OnlineStore.Repo.Interfaces\OnlineStore.Repo.Interfaces.csproj", "{192FC15B-38A5-4409-8A37-8411B621F0ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore.Repo.Impl", "OnlineStore.Repo.Impl\OnlineStore.Repo.Impl.csproj", "{E65B77EE-E26E-4B56-8AFF-BF201D8BF0AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineStore.Repo.Impl", "OnlineStore.Repo.Impl\OnlineStore.Repo.Impl.csproj", "{E65B77EE-E26E-4B56-8AFF-BF201D8BF0AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

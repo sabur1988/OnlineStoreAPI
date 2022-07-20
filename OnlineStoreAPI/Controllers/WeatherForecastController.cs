@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Web.Resource;
+using OnlineStoreAPI;
 
-namespace OnlineStoreAPI.Controllers
+namespace OnlineStoreApi.Controllers
 {
     //[Authorize]
     [ApiController]

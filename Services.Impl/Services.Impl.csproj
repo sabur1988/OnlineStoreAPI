@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OmlineStore.Model\OmlineStore.Model.csproj" />
+    <ProjectReference Include="..\OmlineStore.Model\OnlineStore.Model.csproj" />
+    <ProjectReference Include="..\OnlineStore.Repo.Interfaces\OnlineStore.Repo.Interfaces.csproj" />
     <ProjectReference Include="..\Services.InterFaces\Services.InterFaces.csproj" />
   </ItemGroup>
 
